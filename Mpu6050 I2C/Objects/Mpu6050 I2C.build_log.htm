@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Metin Akkýn, Akkýn Arge, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Metin\Desktop\Keil Example\Mpu6050 I2C\Mpu6050 I2C.uvprojx
+Project File Date:  09/30/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling stm32f4xx_gpio.c...
+compiling misc.c...
+compiling main.c...
+main.c(301): warning:  #1-D: last line of file ends without a newline
+  }
+main.c(155): warning:  #177-D: variable "received_data"  was declared but never referenced
+  	uint8_t received_data[3];
+main.c: 2 warnings, 0 errors
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_rcc.c...
+assembling startup_stm32f40_41xxx.s...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=3732 RO-data=424 RW-data=40 ZI-data=1688  
+".\Objects\Mpu6050 I2C.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.1.1.pack
+                ARM::CMSIS:CORE:5.0.2
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.2
+   * Component: DSP Version: 1.5.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.1.0.8.pack
+                Keil::Device:StdPeriph Drivers:RCC:1.3.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: RCC Version: 1.3.0
+   * Component: USART Version: 1.3.0
+   * Component: I2C Version: 1.3.0
+   * Component: GPIO Version: 1.3.0
+   * Component: Startup Version: 1.3.1
+   * Component: Framework Version: 1.3.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407VG
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.2
+
+   * Component: ARM::CMSIS:DSP:1.5.2
+      Library file:  CMSIS\Lib\ARM\arm_cortexM4lf_math.lib
+      Include file:  CMSIS\Include\arm_math.h
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:1.3.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_usart.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_usart.h
+
+   * Component: Keil::Device:StdPeriph Drivers:I2C:1.3.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_i2c.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_i2c.h
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_gpio.c
+
+   * Component: Keil::Device:Startup:1.3.1
+      Source file:   Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Device\Include\stm32f4xx.h
+      Source file:   Device\Source\system_stm32f4xx.c
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\startup_stm32f40_41xxx.s
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:1.3.1
+      Include file:  Device\StdPeriph_Driver\templates\stm32f4xx_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f4xx_conf.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f4xx_it.c
+Build Time Elapsed:  00:00:15
+</pre>
+</body>
+</html>
